@@ -10,7 +10,7 @@
     // Define an array of day names
     const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
-    // Find the day name corresponding to the current day
+    // corresponding to the current day
     const currentDayofWeek = days[currentDay];
 
     // Set the innerHTML of the currentDayofWeek element to display the current day of the week
