@@ -1,6 +1,6 @@
 // Select the HTML elements with specific data-testid attributes
-const currentDayofWeekElm = document.querySelector(
-  '[data-testid="currentDayofWeek"]'
+const currentDayOfTheWeekElm = document.querySelector(
+  '[data-testid="currentDayOfTheWeek"]'
 );
 const currentUTCTimeElm = document.querySelector(
   '[data-testid="currentUTCTime"]'
@@ -33,10 +33,10 @@ function updateCurrentDayofWeek() {
   ];
 
   // corresponding to the current day
-  const currentDayofWeek = days[currentDay];
+  const currentDayOfTheWeek = days[currentDay];
 
   // Set the innerHTML of the currentDayofWeek element to display the current day of the week
-  currentDayofWeekElm.innerHTML = currentDayofWeek;
+  currentDayOfTheWeekElm.innerHTML = currentDayOfTheWeek;
 }
 
 // function to call updateCurrentDayofWeek and updateCurrentUTCTime
