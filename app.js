@@ -24,7 +24,7 @@
         // Set the innerHTML of an element to display the current UTC time
         document.querySelector('[data-testid="currentUTCTime"]').innerHTML = currentUTCTime;
       }
-      
+    //calling function 
       updateCurrentUTCTime();
       
       // Update the time every second (1000 milliseconds)
