@@ -16,8 +16,17 @@
     // Set the innerHTML of the currentDayofWeek element to display the current day of the week
     currentDayofWeekElm.innerHTML = currentDayofWeek;
 
-    // Get the current time in UTC as a timestamp (milliseconds since January 1, 1970)
-    const currentUTCTime = new Date().getTime();
-
-    // Set the innerHTML of the currentUTCTime element to display the current UTC time
-    currentUTCTimeElm.innerHTML = currentUTCTime;
+    // function to update the current UTC time
+    function updateCurrentUTCTime() {
+        // Create a new Date object to get the current UTC time
+        const currentUTCTime = new Date();
+      
+        // Set the innerHTML of an element to display the current UTC time
+        document.querySelector('[data-testid="currentUTCTime"]').innerHTML = currentUTCTime;
+      }
+      
+      updateCurrentUTCTime();
+      
+      // Update the time every second (1000 milliseconds)
+      setInterval(updateCurrentUTCTime, 1000);
+      
