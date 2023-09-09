@@ -19,7 +19,7 @@
     // function to update the current UTC time
     function updateCurrentUTCTime() {
         // Create a new Date object to get the current UTC time
-        const currentUTCTime = new Date();
+        const currentUTCTime = new Date().getTime();
       
         // Set the innerHTML of an element to display the current UTC time
         document.querySelector('[data-testid="currentUTCTime"]').innerHTML = currentUTCTime;
