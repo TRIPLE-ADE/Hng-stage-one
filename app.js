@@ -48,5 +48,6 @@ function updateDayAndTime() {
     updateCurrentUTCTime();
 }
 
+updateDayAndTime();
 // Update the time every second (1000 milliseconds)
 setInterval(updateDayAndTime, 1000);

@@ -28,3 +28,31 @@ img{
     width: 50%;
     height: auto;
 }
+
+a{
+    position: relative;
+    text-decoration: none;
+    z-index: 1;
+    text-align: center;
+    padding: 0 5px;
+}
+
+a:hover{
+    color: #fff;
+}
+
+a::before{
+    content:'';
+    width: 0;
+    background-color: #000;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    transition: width 0.3s ease-in-out;
+    z-index: -1;
+}
+
+a:hover::before{
+    width: 100%;
+    right: 0;
+}
