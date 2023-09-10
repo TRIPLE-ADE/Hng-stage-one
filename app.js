@@ -44,5 +44,5 @@ function updateCurrentUTCTime() {
 //calling function to updtate the current UTC time
 updateCurrentUTCTime();
 
-// Update the time every second (1000 milliseconds)
+// Update the time every second (1 milliseconds)
 setInterval(updateCurrentUTCTime, 1);
