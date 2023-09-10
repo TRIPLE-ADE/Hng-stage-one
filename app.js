@@ -5,6 +5,12 @@ const currentDayOfTheWeekElm = document.querySelector(
 const currentUTCTimeElm = document.querySelector(
   '[data-testid="currentUTCTime"]'
 );
+const myTrackElm = document.querySelector(
+  '[data-testid="myTrack"]'
+);
+
+//Set the innerHTML of the track element to display my track
+myTrackElm.innerHTML = 'Frontend'
 
 // Get the current day of the week (0 for Sunday, 1 for Monday, etc.)
 const currentDay = new Date().getDay();
@@ -38,5 +44,5 @@ function updateCurrentUTCTime() {
 //calling function to updtate the current UTC time
 updateCurrentUTCTime();
 
-// Update the time every second (1000 milliseconds)
-setInterval(updateCurrentUTCTime, 1000);
+// Update the time every second (1 milliseconds)
+setInterval(updateCurrentUTCTime, 1);
