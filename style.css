@@ -40,6 +40,13 @@ a{
     text-align: center;
 }
 
+p{
+    font-weight: bold;
+}
+
+p span{
+    font-weight: normal;
+}
 /* a:hover{
     color: #fff;
 } */
